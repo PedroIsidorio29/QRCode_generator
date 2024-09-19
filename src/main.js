@@ -1,11 +1,13 @@
 import prompt from "prompt"
-import mainPrompt from "./prompts/prompt_main.js"
+import mainPrompt from "./prompts/prompt-main.js"
+import { createQRCode } from "./services/qr-code/create.js";
+import { createPassword } from "./services/password/create.js";
 
 
 (function main() {
   prompt.get(mainPrompt, (err, choose) => {
-    if (choose.select===1) console.log("escolheu o QRCode");
-    if (choose.select===2) console.log("escolheu o password");
+    if (choose.select==1) createQRCode();
+    if (choose.select==2) createPassword();
   })
   prompt.start()
 })()
