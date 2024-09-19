@@ -1,5 +1,5 @@
 
-class Data {
+export class Data {
   stringToBoolean(str) {
     return str.toLowerCase() === "true";
   };
@@ -20,10 +20,6 @@ class Data {
     let specialChars = '';
     for (let i = 33; i <= 47; i++) specialChars += String.fromCharCode(i);
     for (let i = 58; i <= 64; i++) specialChars += String.fromCharCode(i);
-    for (let i = 91; i <= 96; i++) specialChars += String.fromCharCode(i);
-    for (let i = 123; i <= 126; i++) specialChars += String.fromCharCode(i);
     return specialChars
   }
 }
-
-export default new Data()

@@ -4,7 +4,6 @@ const promptQRCode = [
   {
     name: "link",
     description: chalk.yellow('Informe o link para gerar o QR CODE:'),
-
   },
   {
     name: "type",
