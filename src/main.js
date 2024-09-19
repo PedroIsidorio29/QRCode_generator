@@ -5,7 +5,7 @@ import { createPassword } from "./services/password/create.js";
 
 
 (function main() {
-  prompt.get(mainPrompt, (err, choose) => {
+  prompt.get(mainPrompt, (_, choose) => {
     if (choose.select==1) createQRCode();
     if (choose.select==2) createPassword();
   })
