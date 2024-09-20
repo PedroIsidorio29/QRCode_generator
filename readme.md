@@ -17,4 +17,5 @@ Este é um kit de utilidades para um e-commerce, o projeto deve ser capaz de ger
 
 ## ⚙️ Como Rodar
 
-- 
+- Insira o comando "npm i", para instalar todas as dependencias
+- Rode o comando "npm run start"
