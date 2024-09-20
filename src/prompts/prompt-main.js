@@ -1,11 +1,11 @@
-import chalk from "chalk"
+import { PromptStructure } from "./prompt-data.js"
 
-const mainPrompt = [{
-  name: "select",
-  description: chalk.yellow("Escolha a ferramenta (1 - QRCODE) ou (2 - PASSWORD)"),
-  pattern: /^[1-2]+$/,
-  message: chalk.red.italic("Escolha entre 1 e 2"),
-  require: true
-}]
+const mainPrompt = [
+  new PromptStructure
+    ({
+      name: "select",
+      description: "Escolha a ferramenta (1 - QRCODE) ou (2 - PASSWORD)"
+    }).generateOptions(1, 2)
+]
 
 export default mainPrompt

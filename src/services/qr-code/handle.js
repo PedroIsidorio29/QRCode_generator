@@ -10,7 +10,6 @@ function handle(err, result) {
   const isSmall = result.type == 2
   qr.generate(result.link, { small: isSmall }, (qrcode) => {
     console.log(chalk.green(`QR CODE gerado com sucesso:\n\n ${qrcode}`));
-
   })
 }
 
